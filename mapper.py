@@ -65,7 +65,7 @@ tc05tcr1_map = [
     [1, 'Purchase Identifier Format'],
     [1, 'Account Selection'],
     [2, 'Installment Payment Count'],
-    [25, ' Purchase Identifier'],
+    [25, 'Purchase Identifier'],
     [9, 'Cashback'],
     [1, 'Chip Condition Code'],
     [1, 'POS Environment']
@@ -76,6 +76,8 @@ rules['sales draft0'] = tc05tcr0_map
 rules['sales draft1'] = tc05tcr1_map
 
 tc2trxType = {}
+tc2trxType['01'] = "sales draft"
+tc2trxType['02'] = "sales draft"
 tc2trxType['05'] = "sales draft"
 tc2trxType['06'] = "sales draft"
 tc2trxType['07'] = "sales draft"

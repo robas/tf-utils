@@ -9,10 +9,10 @@ group = parser.add_mutually_exclusive_group(required=True)
 
 group.add_argument("-f", "--file", required=False,
                    dest="filename", type=str,
-                   help="Input CTF file to be converted to Json")
+                   help="Input CTF/ITF file to be converted to Json")
 group.add_argument("-l", "--line", required=False,
                    dest="line", type=str,
-                   help="Input CTF line to be converted to Json")
+                   help="Input CTF/ITF line to be converted to Json")
 args = parser.parse_args()
 
 if args.line:

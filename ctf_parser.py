@@ -19,7 +19,17 @@ def get_tcr(line):
     return line[3]
 
 
+def is_itf(line):
+    return len(line) > 168
+
+
+def convert_itf_to_ctf(line):
+    return line[0:2] + line[4:]
+
+
 def convert_line(line):
+    if is_itf(line):
+        line = convert_itf_to_ctf(line)
     tc = get_tc(line)
     tcr = get_tcr(line)
     if exist_rules(tc, tcr):
@@ -36,7 +46,8 @@ def convert_file(filename):
         ctf = reader.readlines()
     for ctfLine in ctf:
         parsedLine = convert_line(ctfLine)
-        parsedLines.append(parsedLine)
+        if parsedLine:
+            parsedLines.append(parsedLine)
     return parsedLines
 
 
