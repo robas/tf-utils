@@ -1,5 +1,5 @@
 import json
-from mapper import exist_rules, get_rules, rules
+from mapper import exist_rules, get_rules, is_sales_draft, rules
 
 
 def parse_line(str, lens):
@@ -16,11 +16,17 @@ def get_tc(line):
 
 
 def get_tcr(line):
-    return line[3]
+    tcr = line[3]
+    # print(tcr)
+    if is_sales_draft(get_tc(line)) and tcr == "2":
+        # print(tcr + line[16:18])
+        return tcr + line[16:18]
+    else:
+        return tcr
 
 
 def is_itf(line):
-    return len(line) > 168
+    return len(line) > 169
 
 
 def convert_itf_to_ctf(line):
