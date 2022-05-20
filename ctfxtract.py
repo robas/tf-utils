@@ -11,7 +11,7 @@ arg_group = parser.add_argument_group()
 
 arg_group.add_argument("-f", "--file", required=True,
                        dest="filename", type=str,
-                       help="Input CTF/ITF file to be processed")
+                       help="Input CTF/ITF/Bundle file to be processed")
 
 arg_group.add_argument("-tc", "--transactioncode", required=True,
                        dest="tc", type=str,

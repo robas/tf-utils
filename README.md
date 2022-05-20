@@ -20,7 +20,7 @@ optional arguments:
   -h, --help            show this help message and exit
 
   -f FILENAME, --file FILENAME
-                        Input CTF/ITF file to be processed
+                        Input CTF/ITF/Bundle file to be processed
   -tc TC, --transactioncode TC
                         Target transaction code (TC) to filter for
   -fields FIELDS, --fields FIELDS
