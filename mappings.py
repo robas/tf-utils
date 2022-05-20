@@ -1,3 +1,77 @@
+returned_items_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr9_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [2, 'Original Transaction Code'],
+    [1, 'Original Transaction Code Qualifier'],
+    [1, 'Original Transaction Component Sequence Number'],
+    [5, 'Source Batch Date (YYDDD)'],
+    [6, 'Source Batch Number'],
+    [4, 'Item Sequence Number'],
+    [3, 'Return Reason Code 1'],
+    [12, 'Original Source Amount'],
+    [3, 'Original Source Currency'],
+    [1, 'Original Settlement Flag'],
+    [1, 'Chargeback Reduction Service (CRS) Return Flag'],
+    [3, 'Return Reason Code 2'],
+    [3, 'Return Reason Code 3'],
+    [3, 'Return Reason Code 4'],
+    [3, 'Return Reason Code 5'],
+    [101, 'Reserved']
+]
+
+reclassification_advice_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Reclassified TCR']
+]
+
+reclassification_advice_tcr9_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [2, 'Original Transaction Code'],
+    [1, 'Original Transaction Code Qualifier'],
+    [1, 'Original Transaction Component Sequence Number'],
+    [5, 'Source Batch Date (YYDDD)'],
+    [6, 'Source Batch Number'],
+    [4, 'Item Sequence Number'],
+    [3, 'Product Reclassification Reason'],
+    [2, 'Settled Product ID'],
+    [1, 'Settled Spend Qualified Indicator'],
+    [26, 'Reserved'],
+    [1, 'Reserved'],
+    [1, 'Settled Authorization Characteristics Indicator'],
+    [1, 'Settled Requested Payment Service'],
+    [1, 'Settled Reimbursement Attribute'],
+    [16, 'Derived IRF Descriptor'],
+    [16, 'Settled IRF Descriptor'],
+    [3, 'Payment Service Reclassification Reason'],
+    [3, 'Fee Reclassification Reason'],
+    [3, 'Merchant Volume Reclassification Reason'],
+    [3, 'Submitted Fee Program Indicator'],
+    [3, 'Assessed Fee Program Indicator'],
+    [3, 'Fee Program Indicator Reclassification Reason'],
+    [3, 'MOTO/ECI Reclassification Reason'],
+    [15, 'Interchange Fee Amount'],
+    [1, 'Interchange Fee Sign'],
+    [3, 'Transaction Integrity Fee Reclassification Reason'],
+    [3, 'Spend Qualified Indicator Reclassification Reason'],
+    [22, 'n/a Reserved']
+]
+
 sales_draft_tcr0_map = [
     [2, 'Transaction Code'],
     [1, 'Transaction Code Qualifier'],
@@ -205,6 +279,42 @@ tc10_tcr1_map = [
     [159, 'Reserved']
 ]
 
+tc10_tcr2_ar_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [3, 'Country Code (AR^)'],
+    [56, 'Reserved'],
+    [6, 'Deferred Settlement Date'],
+    [87, 'Reserved']
+]
+
+tc10_tcr2_br_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [3, 'Country Code (BR^)'],
+    [3, 'Reserved'],
+    [3, 'Settlement Type'],
+    [10, 'National Reimbursement Fee'],
+    [4, 'Central Processing Date (YDDD)'],
+    [2, 'Installment Payment Count'],
+    [127, 'Reserved']
+]
+
+tc10_tcr4_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [2, 'Business Format Code'],
+    [2, 'Promotion Type'],
+    [25, 'Promotion Code'],
+    [4, 'Network Identification Code'],
+    [131, 'Reserved']
+]
+
 tc20_tcr0_map = [
     [2,  'Transaction Code'],
     [1,  'Transaction Code Qualifier'],
@@ -226,4 +336,67 @@ tc20_tcr0_map = [
     [1,  'Reserved'],
     [4,  'Central Processing Date (YDDD)'],
     [1,  'Reimbursement Attribute']
+]
+
+tc20_tcr4_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [2, 'Business Format Code'],
+    [2, 'Promotion Type'],
+    [25, 'Promotion Code'],
+    [4, 'Network Identification Code'],
+    [131, 'Reserved']
+]
+
+tc33_cas_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [3, 'CAS Advice Record ID'],
+    [1, 'Originator/Recipient Indicator'],
+    [2, 'Transaction Code of Financial Transaction'],
+    [1, 'TCQ of Financial Transaction'],
+    [4, 'Central Processing Date'],
+    [15, 'Transaction ID'],
+    [16, 'Account Number'],
+    [3, 'Account Number Extension'],
+    [23, 'Acquirer Reference Number'],
+    [15, 'Card Acceptor ID'],
+    [8, 'Terminal ID'],
+    [12, 'Source Amount'],
+    [3, 'Source Currency Code'],
+    [1, 'Settlement Flag'],
+    [3, 'Settlement Service ID'],
+    [3, 'Settlement Currency'],
+    [10, 'Leaf Level SRE-ID'],
+    [10, 'Funds Transfer SRE-ID'],
+    [12, 'Settlement Amount - Interchange'],
+    [1, 'Settlement Amount - Sign'],
+    [1, 'Usage Code'],
+    [1, 'Reclassification Indicator'],
+    [1, 'Requested Payment Service'],
+    [3, 'Reserved']
+]
+
+tc33_cas_tcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [15, 'Interchange Fee Amount'],
+    [1, 'Interchange Fee Sign'],
+    [10, 'Merchant Verification Value'],
+    [3, 'Fee Program Indicator'],
+    [16, 'Fee Descriptor'],
+    [4, 'Conversion Date'],
+    [4, 'Settlement Date'],
+    [30, 'BASE II Unique File ID'],
+    [2, 'Reserved'],
+    [1, 'Persistent FX Applied Indicator'],
+    [5, 'Rate Table ID'],
+    [1, 'Additional Token Response Information'],
+    [4, 'Agreement ID'],
+    [69, 'Reserved']
 ]

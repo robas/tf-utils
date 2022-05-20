@@ -1,4 +1,4 @@
-from mapper import exist_rules, get_rules, is_sales_draft
+from mapper import *
 from line_converter import *
 
 
@@ -12,12 +12,15 @@ def parse_line(str, lens):
 
 
 def get_tc(line):
-    return line[0:2]
+    if is_tc_of_type(get_tc(line), "multipurpose"):
+        return line[0:2] + line[16:19]
+    else:
+        return line[0:2]
 
 
 def get_tcr(line):
     tcr = line[3]
-    if is_sales_draft(get_tc(line)) and tcr == "2":
+    if tcr == "2" and (is_tc_of_type(get_tc(line), "sales draft") or is_tc_of_type(get_tc(line), "fee collection")):
         return tcr + line[16:18]
     else:
         return tcr
