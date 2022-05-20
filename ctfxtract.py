@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
-import json
 from argparse import ArgumentParser
-from ctf_parser import convert_line, convert_file, save_json_to_file
+from ctf_parser import convert_file
 from tc_parser import *
 import csv
 
@@ -36,7 +35,6 @@ if args.filename:
     if args.fields:
         fields = [f.strip() for f in args.fields.split(",")]
         for tc in tcs:
-            #print(getTCFields(tc, fields))
             resultSet.append(getTCFields(tc, fields))
         with open(output_csv_filename, 'w') as f:
             writer = csv.writer(f)

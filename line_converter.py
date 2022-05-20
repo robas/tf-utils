@@ -18,8 +18,10 @@ def is_bundle(line):
 
 
 def convert_itf_to_ctf(line):
-    return line[0:2] + line[4:]
+    outputLine = line[0:2] + line[4:]
+    return outputLine
 
 
 def convert_bundle(line):
-    return re.sub('^key:.*Data:', '', line)
+    outputLine = re.sub('^key:.*Data:', '', line)
+    return outputLine

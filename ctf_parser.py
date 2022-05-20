@@ -1,8 +1,5 @@
-import json
-from mapper import exist_rules, get_rules, is_sales_draft, rules
-import re
+from mapper import exist_rules, get_rules, is_sales_draft
 from line_converter import *
-import sys
 
 
 def parse_line(str, lens):
@@ -20,25 +17,32 @@ def get_tc(line):
 
 def get_tcr(line):
     tcr = line[3]
-    # print(tcr)
     if is_sales_draft(get_tc(line)) and tcr == "2":
-        # print(tcr + line[16:18])
         return tcr + line[16:18]
     else:
         return tcr
 
 
-def convert_line(line):
+def convert_line_to_ctf(line):
     if is_bundle(line):
         line = convert_bundle(line)
     if is_itf(line):
         line = convert_itf_to_ctf(line)
-    if not is_ctf(line):
-        sys.exit("Unknown file type, aborting.")
-    tc = get_tc(line)
-    tcr = get_tcr(line)
-    if exist_rules(tc, tcr):
-        return parse_line(line, get_rules(tc, tcr))
+    if is_ctf(line):
+        return line
+    else:
+        return ""
+
+
+def process_line(line):
+    line = convert_line_to_ctf(line)
+    if line:
+        tc = get_tc(line)
+        tcr = get_tcr(line)
+        if exist_rules(tc, tcr):
+            return parse_line(line, get_rules(tc, tcr))
+    else:
+        return ""
 
 
 def convert_file(filename):
@@ -49,12 +53,7 @@ def convert_file(filename):
     with open(ctf_filename, 'r') as reader:
         ctf = reader.readlines()
     for ctfLine in ctf:
-        parsedLine = convert_line(ctfLine)
+        parsedLine = process_line(ctfLine)
         if parsedLine:
             parsedLines.append(parsedLine)
     return parsedLines
-
-
-def save_json_to_file(json_obj, filename):
-    with open(filename, 'w') as writer:
-        writer.write(json.dumps(json_obj, indent=4, sort_keys=True))
