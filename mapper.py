@@ -42,6 +42,7 @@ tc2trxType['36'] = "sales draft"
 tc2trxType['37'] = "sales draft"
 tc2trxType['10'] = "fee collection"
 tc2trxType['20'] = "funds disbursement"
+tc2trxType['33'] = "multipurpose"
 tc2trxType['33CAS'] = "multipurposeCAS"
 
 
@@ -49,6 +50,8 @@ def exist_rules(tc, tcr):
     if tc in tc2trxType.keys() and tc2trxType[tc]+tcr in rules.keys():
         return True
     return False
+
+# Problema no caso do TC33, o CAS/VCR vem no TCR0 mas não no TCR1
 
 
 def get_rules(tc, tcr):

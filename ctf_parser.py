@@ -12,7 +12,7 @@ def parse_line(str, lens):
 
 
 def get_tc(line):
-    if is_tc_of_type(get_tc(line), "multipurpose"):
+    if is_tc_of_type(line[0:2], "multipurpose"):
         return line[0:2] + line[16:19]
     else:
         return line[0:2]
@@ -44,6 +44,8 @@ def process_line(line):
         tcr = get_tcr(line)
         if exist_rules(tc, tcr):
             return parse_line(line, get_rules(tc, tcr))
+        else:
+            print("no rule for TC " + tc + " TCR " + tcr)
     else:
         return ""
 
