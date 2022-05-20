@@ -1,5 +1,8 @@
 import json
 from mapper import exist_rules, get_rules, is_sales_draft, rules
+import re
+from line_converter import *
+import sys
 
 
 def parse_line(str, lens):
@@ -25,17 +28,13 @@ def get_tcr(line):
         return tcr
 
 
-def is_itf(line):
-    return len(line) > 169
-
-
-def convert_itf_to_ctf(line):
-    return line[0:2] + line[4:]
-
-
 def convert_line(line):
+    if is_bundle(line):
+        line = convert_bundle(line)
     if is_itf(line):
         line = convert_itf_to_ctf(line)
+    if not is_ctf(line):
+        sys.exit("Unknown file type, aborting.")
     tc = get_tc(line)
     tcr = get_tcr(line)
     if exist_rules(tc, tcr):
@@ -44,7 +43,6 @@ def convert_line(line):
 
 def convert_file(filename):
     ctf_filename = filename
-    json_filename = ctf_filename+".json"
 
     ctf = []
     parsedLines = []

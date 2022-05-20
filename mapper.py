@@ -174,6 +174,60 @@ sales_draft_tcr7_map = [
     [10, 'Issuer Script 1 Results']
 ]
 
+tc10_tcr0_map = [
+    [2,  'Transaction Code'],
+    [1,  'Transaction Code Qualifier'],
+    [1,  'Transaction Component Sequence Number'],
+    [6,  'Destination Identifier'],
+    [6,  'Source Identifier'],
+    [4,  'Reason Code'],
+    [3,  'Country Code'],
+    [4,  'Event Date (MMDD)'],
+    [16,  'Account Number'],
+    [3,  'Account Number Extension'],
+    [12,  'Destination Amount'],
+    [3,  'Destination Currency Code'],
+    [12,  'Source Amount'],
+    [3,  'Source Currency Code'],
+    [70,  'Message Text'],
+    [1,  'Settlement Flag'],
+    [15,  'Transaction Identifier'],
+    [1,  'Reserved'],
+    [4,  'Central Processing Date (YDDD)'],
+    [1,  'Reimbursement Attribute']
+]
+
+tc10_tcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [5, 'Rate Table ID'],
+    [159, 'Reserved']
+]
+
+tc20_tcr0_map = [
+    [2,  'Transaction Code'],
+    [1,  'Transaction Code Qualifier'],
+    [1,  'Transaction Component Sequence Number'],
+    [6,  'Destination Identifier'],
+    [6,  'Source Identifier'],
+    [4,  'Reason Code'],
+    [3,  'Country Code'],
+    [4,  'Event Date (MMDD)'],
+    [16,  'Account Number'],
+    [3,  'Account Number Extension'],
+    [12,  'Destination Amount'],
+    [3,  'Destination Currency Code'],
+    [12,  'Source Amount'],
+    [3,  'Source Currency Code'],
+    [70,  'Message Text'],
+    [1,  'Settlement Flag'],
+    [15,  'Transaction Identifier'],
+    [1,  'Reserved'],
+    [4,  'Central Processing Date (YDDD)'],
+    [1,  'Reimbursement Attribute']
+]
+
 rules = {}
 rules['sales draft0'] = sales_draft_tcr0_map
 rules['sales draft1'] = sales_draft_tcr1_map
@@ -181,6 +235,9 @@ rules['sales draft2AR'] = sales_draft_tcr2_ar_map
 rules['sales draft2BR'] = sales_draft_tcr2_br_map
 rules['sales draft5'] = sales_draft_tcr5_map
 rules['sales draft7'] = sales_draft_tcr7_map
+rules['fee collection0'] = tc10_tcr0_map
+rules['fee collection1'] = tc10_tcr1_map
+rules['funds disbursement0'] = tc20_tcr0_map
 
 tc2trxType = {}
 tc2trxType['01'] = "sales draft"
@@ -197,6 +254,8 @@ tc2trxType['27'] = "sales draft"
 tc2trxType['35'] = "sales draft"
 tc2trxType['36'] = "sales draft"
 tc2trxType['37'] = "sales draft"
+tc2trxType['10'] = "fee collection"
+tc2trxType['20'] = "funds disbursement"
 
 
 def exist_rules(tc, tcr):
