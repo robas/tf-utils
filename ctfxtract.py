@@ -27,14 +27,14 @@ if args.filename:
     fields = []
     resultSet = []
     output_csv_filename = args.filename + ".csv"
-    json_objs = convert_file(args.filename)
+    tcs = convert_file(args.filename)
 
     if args.tc:
-        tcs = filterTC(json_objs, args.tc)
+        filteredTCs = filterTC(tcs, args.tc)
 
     if args.fields:
         fields = [f.strip() for f in args.fields.split(",")]
-        for tc in tcs:
+        for tc in filteredTCs:
             resultSet.append(getTCFields(tc, fields))
         with open(output_csv_filename, 'w') as f:
             writer = csv.writer(f)

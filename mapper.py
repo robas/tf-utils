@@ -51,8 +51,6 @@ def exist_rules(tc, tcr):
         return True
     return False
 
-# Problema no caso do TC33, o CAS/VCR vem no TCR0 mas não no TCR1
-
 
 def get_rules(tc, tcr):
     if tc in tc2trxType.keys() and tc2trxType[tc]+tcr in rules.keys():

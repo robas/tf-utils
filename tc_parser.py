@@ -7,7 +7,6 @@ def filterTC(tcs, tc):
     toAppendTC = {}
     i = 0
 
-# Olhar essa merda, e refazer!
     while i < len(tcs):
         currentTCR = dict(tcs[i])
 
@@ -30,10 +29,6 @@ def filterTC(tcs, tc):
     if toAppendTC:
         result.append(toAppendTC)
 
-    # for obj in tcs:
-    #    d = dict(obj)
-    #    if d.get("Transaction Code") == tc:
-    #        result.append(d)
     return result
 
 
