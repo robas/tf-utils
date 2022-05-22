@@ -15,10 +15,6 @@ def parse_line(str, lens):
 
 def get_tc(line):
     return line[0:2]
-    # if is_tc_of_type(line[0:2], "multipurpose"):
-    #     return line[0:2] + line[16:19]
-    # else:
-    #     return line[0:2]
 
 
 def get_tcr(line):
@@ -27,6 +23,24 @@ def get_tcr(line):
         return tcr + line[16:18]
     else:
         return tcr
+
+
+def get_file_types(filename):
+    fileTypes = []
+    with open(filename, 'r') as reader:
+        inputFile = reader.readlines()
+    for line in inputFile:
+        if is_bundle(line):
+            fileTypes.append("Bundle")
+        if is_itf(line):
+            fileTypes.append("ITF")
+        if is_ctf(line):
+            fileTypes.append("CTF")
+    types = set(fileTypes)
+    outputValue = ""
+    for type in types:
+        outputValue = type + " " + outputValue
+    return outputValue
 
 
 def convert_line_to_ctf(line):

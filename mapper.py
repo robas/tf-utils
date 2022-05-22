@@ -27,6 +27,7 @@ rules['multipurposeCAS1'] = tc33_cas_tcr1_map
 tc2trxType = {}
 tc2trxType['01'] = "returned items"
 tc2trxType['02'] = "returned items"
+tc2trxType['03'] = "returned items"
 tc2trxType['04'] = "reclassification advice"
 tc2trxType['05'] = "sales draft"
 tc2trxType['06'] = "sales draft"
