@@ -42,3 +42,11 @@ chmod +x ctfxtract.py
 ```shell
 ./ctfxtract.py -f files/TEST.ITF -tc 20 -fields "Transaction Identifier, Source Amount,Reason Code, Country Code,Event Date (MMDD),Message Text"
 ```
+
+## utils/pdf2dict.sh
+
+The `mappings.py` file was generated with the help of pdf2dict.sh script. The script generates python dictionary entries directly from copy and paste of Visa pdf table contents.
+
+1. Paste the Visa pdf table content and save it to a file.
+2. Execute `./pdf2dict.sh /path/to/filename`.
+3. Pdf2dict script will generate a `/path/to/filename.csv` with the resulting dictionary entries.
