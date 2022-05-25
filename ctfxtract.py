@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from argparse import ArgumentParser
-from ctf_parser import convert_file, get_file_types
+from ctf_parser import convert_file, get_file_layouts
 from tc_parser import *
 import csv
 
@@ -28,8 +28,8 @@ if args.filename:
     resultSet = []
     output_csv_filename = args.filename + ".csv"
 
-    inputFileTypes = get_file_types(args.filename)
-    print("Input file types detected: " + inputFileTypes)
+    inputFileLayouts = get_file_layouts(args.filename)
+    print("\nInput file types detected: " + inputFileLayouts)
 
     tcs = convert_file(args.filename)
 

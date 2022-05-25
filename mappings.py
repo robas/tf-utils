@@ -5,6 +5,68 @@ returned_items_tcr0_map = [
     [164, 'Contents of Returned TCR']
 ]
 
+returned_items_tcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+returned_items_tcr2_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr3_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr4_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr5_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr6_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr7_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcr8_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
+returned_items_tcrD_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Contents of Returned TCR']
+]
+
 returned_items_tcr9_map = [
     [2, 'Transaction Code'],
     [1, 'Transaction Code Qualifier'],
@@ -399,4 +461,462 @@ tc33_cas_tcr1_map = [
     [1, 'Additional Token Response Information'],
     [4, 'Agreement ID'],
     [69, 'Reserved']
+]
+
+
+tc33_cas_vcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [3, 'VCR Record Identifier'],
+    [2, 'Dispute Status'],
+    [2, 'Dispute Transaction Code'],
+    [1, 'Dispute Transaction Code Qualifier'],
+    [1, 'Originator Recipient Indicator'],
+    [16, 'Account Number'],
+    [3, 'Account Number Extension'],
+    [23, 'Acquirer Reference Number'],
+    [4, 'Purchase Date (MMDD)'],
+    [12, 'Source Amount'],
+    [3, 'Source Currency Code'],
+    [25, 'Merchant Name'],
+    [13, 'Merchant City'],
+    [3, 'Merchant Country Code'],
+    [4, 'Merchant Category Code'],
+    [3, 'Merchant State/Province Code'],
+    [5, 'Merchant ZIP Code'],
+    [1, 'Requested Payment Service'],
+    [6, 'Authorization Code'],
+    [2, 'POS Entry Mode'],
+    [4, 'Central Processing Date (YDDD)'],
+    [15, 'Card Acceptor ID'],
+    [1, 'Reimbursement Attribute']
+]
+
+tc33_cas_vcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [4, 'Network Identification Code'],
+    [3, 'Dispute Condition'],
+    [11, 'VROL Financial ID'],
+    [10, 'VROL Case Number'],
+    [10, 'VROL Bundle Case Number'],
+    [20, 'Client Case Number'],
+    [4, 'Reserved'],
+    [2, 'Multiple Clearing Sequence Number'],
+    [2, 'Multiple Clearing Sequence Count'],
+    [2, 'Product ID'],
+    [1, 'Spend Qualified Indicator'],
+    [2, 'Dispute Financial Reason Code'],
+    [1, 'Settlement Flag'],
+    [1, 'Usage Code'],
+    [15, 'Transaction Identifier'],
+    [8, 'Acquirers Business ID'],
+    [12, 'Original Transaction Amount'],
+    [3, 'Original Transaction Currency Code'],
+    [1, 'Special Chargeback Indicator'],
+    [12, 'Destination/Source Settlement Amount'],
+    [3, 'Destination/Source Settlement Currency'],
+    [1, 'Source Settlement Amount Sign'],
+    [5, 'Rate Table ID'],
+    [31, 'Reserved']
+]
+
+tc40_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [151, 'Transaction Data'],
+    [1, 'Reimbursement Attribute']
+]
+tc40_tcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+tc40_tcr2_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+tc40_tcr3_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+tc40_tcr4_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+tc40_tcr5_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+tc40_tcr6_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+tc40_tcr7_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [164, 'Transaction Data']
+]
+
+tc44_tcr0_a_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [5, 'Edit Package Batch Date (YYDDD)'],
+    [6, 'Edit Package Batch Number'],
+    [8, 'Interchange Window ID Number'],
+    [1, 'Batch Disposition Code'],
+    [1, 'Summary Type Code'],
+    [3, 'Currency Code'],
+    [1, 'Settlement Flag'],
+    [1, 'Reserved'],
+    [15, 'Total Transaction Component Records'],
+    [15, 'Total Transactions'],
+    [15, 'Gross Amount'],
+    [50, 'Reserved'],
+    [30, 'BASE II Unique File ID'],
+    [1, 'Reimbursement Attribute']
+]
+tc44_tcr0_r_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [5, 'Edit Package Batch Date (YYDDD)'],
+    [6, 'Edit Package Batch Number'],
+    [8, 'Interchange Window ID Number'],
+    [1, 'Batch Disposition Code'],
+    [3, 'Reject Reason Code'],
+    [98, 'Reserved'],
+    [30, 'BASE II Unique File ID'],
+    [1, 'Reimbursement Attribute']
+]
+tc44_tcr0_x_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [5, 'Edit Package Batch Date (YYDDD)'],
+    [6, 'Edit Package Batch Number'],
+    [8, 'Interchange Window ID Number'],
+    [1, 'Batch Disposition Code'],
+    [1, 'Summary Type Code'],
+    [3, 'Currency Code'],
+    [1, 'Settlement Flag'],
+    [1, 'Reserved-Batch'],
+    [15, 'Total Transaction Component Records'],
+    [15, 'Total Transactions'],
+    [15, 'Gross Amount'],
+    [50, 'Reserved'],
+    [30, 'BASE II Unique File ID'],
+    [1, 'Reimbursement Attribute']
+]
+
+tc44_tcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr2_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr3_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr4_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr5_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr6_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr7_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+tc44_tcr8_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [12, 'Reserved'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [2, 'Transaction Code Being Summarized'],
+    [1, 'Transaction Code Qualifier'],
+    [15, 'Transaction Count'],
+    [15, 'Settlement Amount'],
+    [20, 'Reserved']
+]
+
+tc54_tcr0_map = [
+    [2, 'Transaction Code'],
+    [2, 'Record Hash Total'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [4, 'Version Number'],
+    [6, 'Sequence Number'],
+    [1, 'Record Type'],
+    [140, 'Group File Replacement Data'],
+    [1, 'Reimbursement Attribute']
+]
+
+tc56_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [27, 'First Currency Entry'],
+    [27, 'Second Currency Entry'],
+    [27, 'Third Currency Entry'],
+    [27, 'Fourth Currency Entry'],
+    [27, 'Fifth Currency Entry'],
+    [5, 'Rate Table ID'],
+    [12, 'Reserved']
+]
+
+tc56_tcr1_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Destination Identifier'],
+    [6, 'Source Identifier'],
+    [27, 'First Currency Entry'],
+    [27, 'Second Currency Entry'],
+    [27, 'Third Currency Entry'],
+    [27, 'Fourth Currency Entry'],
+    [27, 'Fifth Currency Entry'],
+    [5, 'Rate Table ID'],
+    [12, 'Reserved']
+]
+
+tc90_tcr0_map = [
+    [2, 'Transaction Code'],
+    [6, 'Center Information Block (CIB)'],
+    [5, 'Processing Date (YYDDD)'],
+    [6, 'Reserved'],
+    [5, 'Settlement Date (YYDDD)'],
+    [2, 'Reserved'],
+    [3, 'Release Number'],
+    [4, 'Test Option'],
+    [29, 'Reserved'],
+    [8, 'Security Code'],
+    [6, 'Reserved'],
+    [3, 'Incoming File ID'],
+    [89, 'Reserved']
+]
+
+tc91_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Center Information Block (CIB)'],
+    [5, 'Processing Date (YYDDD)'],
+    [15, 'Destination Amount'],
+    [12, 'Number of Monetary Transactions'],
+    [6, 'Batch Number'],
+    [12, 'Number of TCRs'],
+    [6, 'Reserved'],
+    [8, 'Center Batch ID'],
+    [9, 'Number of Transactions'],
+    [18, 'Reserved'],
+    [15, 'Source Amount'],
+    [15, 'Reserved'],
+    [15, 'Reserved'],
+    [15, 'Reserved'],
+    [7, 'Reserved']
+]
+tc92_tcr0_map = [
+    [2, 'Transaction Code'],
+    [1, 'Transaction Code Qualifier'],
+    [1, 'Transaction Component Sequence Number'],
+    [6, 'Center Information Block (CIB)'],
+    [5, 'Processing Date (YYDDD)'],
+    [15, 'Destination Amount'],
+    [12, 'Number of Monetary Transactions'],
+    [6, 'Batch Number'],
+    [12, 'Number of TCRs'],
+    [6, 'Reserved'],
+    [8, 'Center Batch ID'],
+    [9, 'Number of Transactions'],
+    [18, 'Reserved'],
+    [15, 'Source Amount'],
+    [15, 'Reserved'],
+    [15, 'Reserved'],
+    [15, 'Reserved'],
+    [7, 'Reserved']
 ]

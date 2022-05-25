@@ -18,6 +18,7 @@ cp $FILE $DICTFILE
 
 sed -i '' -E 's/^[0-9]+ //' $DICTFILE
 sed -i '' -E 's/^[0-9]+\–[0-9]+ //' $DICTFILE
+sed -i '' -E 's/^[0-9]+\—[0-9]+ //' $DICTFILE
 sed -i '' -E 's/^[0-9]+\-[0-9]+ //' $DICTFILE
 sed -i '' -E 's/( UN| AN| ANS| DX| N)//' $DICTFILE
 sed -i '' -E "s/^([0-9]+) (.*)/[\1, '\2'],/" $DICTFILE

@@ -53,6 +53,13 @@ def getTCFields(record, fields):
 
 
 def mergeDicts(x, y):
-    z = x.copy()
-    z.update(y)
-    return z
+    for k in y:
+        v = y[k]
+        if k in x:
+            tcr = y.get("Transaction Component Sequence Number")
+            x[k+tcr] = v
+        else:
+            x[k] = v
+    #z = x.copy()
+    # z.update(y)
+    return x

@@ -21,11 +21,13 @@ def get_tcr(line):
     tcr = line[3]
     if tcr == "2" and (is_tc_of_type(get_tc(line), "sales draft") or is_tc_of_type(get_tc(line), "fee collection")):
         return tcr + line[16:18]
+    elif tcr == "0" and (is_tc_of_type(get_tc(line), "batch ack")):
+        return tcr + line[35]
     else:
         return tcr
 
 
-def get_file_types(filename):
+def get_file_layouts(filename):
     fileTypes = []
     with open(filename, 'r') as reader:
         inputFile = reader.readlines()
